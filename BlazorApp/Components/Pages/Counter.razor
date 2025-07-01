@@ -1,0 +1,37 @@
+﻿@page "/counter"
+@rendermode InteractiveServer
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<p> Hello There, @currentName</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private string[] Names = new string[]
+        {
+            "Bryson",
+            "Jordan",
+            "Braden",
+            "Tay",
+            "Taylor"
+        };
+
+    private string currentName;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var currentName = Names[Random.Shared.Next(Names.Length)];
+    }
+
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
