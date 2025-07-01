@@ -1,5 +1,70 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+﻿# .gitignore for Visual Studio Projects
 
-/.vs/blazer-app/v17
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio temporary files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+Generated_Code/
+
+# Windows image file caches
+Thumbs.db
+
+# User-specific files
+*.rsuser
+*.vspx
+*.vsp
+*.psess
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.sbr
+*.sdf
+*.cache
+*.dbmdl
+*.bak
+*.log
+
+# DotCover
+.idea/
+*.dotCover
+
+# Rider
+.idea/
+*.sln.iml
+
+# Others
+_ReSharper*/
+[Tt]est[Rr]esult*/
+*.tmh
+*.tlog
+*.log
+*.vspscc
+*.vssscc
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Web projects
+node_modules/
+wwwroot/lib/
+yarn.lock
+
+# Publish
+publish/
+
+# Azure Function local settings
+local.settings.json
